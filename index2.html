@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f163a432b2.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styleit2.css">
+    <title>FlatSome</title>
+</head>
+<body>
+    <div class="main m-0">
+        <a href="#headerPart" class="gotoTop d-flex">
+            <i class="fa-regular fa-circle-up"></i>
+            <h6>Goto top</h6>
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex header" id="headerPart">
+                <a href="#" class="navbar-brand d-inline me-0">
+                    <img src="images/logo.png" alt="logo here" class="logo" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#listOfItems" 
+                        aria-controls="listOfItems" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse linksection" id="listOfItems">
+                    <ul class="navbar-nav links">
+                        <li class="nav-item dropdown"> 
+                            <a href="#" class="nav-link dropdown-toggle mainlinks" id="demosDrop" 
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" >DEMOS</a>
+                            <ul class="dropdown-menu" aria-labelledby="demosDrop">
+                                <li><a href="#d1" class="dropdown-item">Demo#1</a></li>
+                                <li><a href="#d2" class="dropdown-item">Demo#2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle mainlinks" id="featuresDrop" 
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">FEATURES</a>
+                            <ul class="dropdown-menu" aria-labelledby="featuresDrop">
+                                <li><a href="#f1" class="dropdown-item">Feature#1</a></li>
+                                <li><a href="#f2" class="dropdown-item">Feature#2</a></li>
+                                <li><a href="#f3" class="dropdown-item">Feature#3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle mainlinks" id="shopDrop" 
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">SHOP</a>
+                            <ul class="dropdown-menu" aria-labelledby="shopDrop">
+                                <li><a href="#latest" class="dropdown-item">Latest collection</a></li>
+                                <li><a href="#best" class="dropdown-item">Best selling</a></li>
+                                <li><a href="#featured" class="dropdown-item">Featured</a></li>
+                                <li><a href="#top" class="dropdown-item">Top rated</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a href="#" class="nav-link dropdown-toggle mainlinks" id="pagesDrop" 
+                                role="button" data-bs-toggle="dropdown">PAGES</a>
+                            <ul class="dropdown-menu" aria-labelledby="pagesDrop">
+                                <li><a href="#news" class="dropdown-item">Latest news</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a href="#" class="nav-link mainlinks">BLOG</a></li>
+                        <li class="nav-item"> <a href="#" class="nav-link mainlinks">ELEMENTS</a></li>
+                        <li class="nav-item dropdown"> 
+                            <a href="#" class="nav-link dropdown-toggle mainlinks" id="searchDrop" 
+                                role="button" data-bs-toggle="dropdown" style="content: none;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <input type="text" class="dropdown-menu" aria-labelledby="searchDrop" id="search">
+                        </li>
+                    </ul>
+                    <div class="bar m-3" style="border-right: 1px solid rgba(0, 0, 0, 0.188); height: 40px;"></div>
+                    <button class="btn btn-lg btn-outline-danger me-md-0 me-lg-3 fw-semibold titlebutton" id="titlebutton1">SIGN UP</button>
+                    <button class="btn btn-lg btn-primary fw-semibold titlebutton" id="titlebutton2">BUY NOW</button>
+                </div>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#search" 
+                        aria-controls="search" aria-expanded="false" aria-label="Toggle navigation"> -->
+                
+                <!-- </button> -->
+                <!-- <form class="collapse navbar-toggler d-flex" id="search">
+                    <input type="text" class="form-control">
+                </form> -->
+
+        </nav>
+        <div class="c container1">
+            <div id="primaryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-bs-target="#primaryCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#primaryCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#primaryCarousel" data-bs-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="overlay-img" style="background-image: url('images/primary1.jpg');">
+                        </div> 
+                        <div class="section1 section1Anim">
+                            <h3>Small header</h3>
+                            <h1 class="headings">ADD SOME CORPORATE HEADER HERE</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed id obcaecati excepturi expedita ipsum, provident laborum consectetur.....</p>
+                            <button class="btn btn-dark btn-lg commonBtn">Read more</button>
+                        </div>
+                        <!-- <img src="images/primary1.jpg" alt="bgimage here" class="primaryimage"> -->
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay-img"  style="background-image: url('images/primary2.jpg');">
+                        </div> 
+                        <!-- style="background-image: url(./images/primary2.jpg);"></div> -->
+                        <div class="section1 section1Anim">
+                            <h3>Small header</h3>
+                            <h1 class="headings">ADD SOME CORPORATE HEADER HERE</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed id obcaecati excepturi expedita ipsum, provident laborum consectetur.....</p>
+                            <button class="btn btn-dark btn-lg commonBtn">Read more</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay-img"  style="background-image: url('images/primary3.jpg');">
+                        </div> 
+                        <div class="section1 section1Anim">
+                            <h3>Small header</h3>
+                            <h1 class="headings">ADD SOME CORPORATE HEADER HERE</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed id obcaecati excepturi expedita ipsum, provident laborum consectetur.....</p>
+                            <button class="btn btn-dark btn-lg commonBtn">Read more</button>
+                        </div>
+                        <!-- <img src="images/primary3.jpg" alt="bgimage here" class="primaryimage"> -->
+                    </div>
+                </div>
+                <a href="#primaryCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon carousel-arrows c1-left-arrow" aria-hidden="true"></span>
+                    <span class="sr-only">previous</span>
+                </a>
+                <a href="#primaryCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon carousel-arrows c1-right-arrow" aria-hidden="true"></span>
+                    <span class="sr-only">next</span>
+                </a>
+            </div>
+        </div>
+        <div class="c container2 d-flex row">
+            <div class="cards col-md-4" id="f1">
+                <img src="images/cameraicon.png" >
+                <H2 class="headings">Makes you photogenic</H2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,consectetur mollitia explicabo incidunt reprehenderit sed qui error? Labore, quidem!</p>
+            </div>
+            <div class="cards col-md-4" id="f2">
+                <img src="images/cameraicon.png" >
+                <H2 class="headings">World wide reach</H2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,consectetur mollitia explicabo incidunt reprehenderit sed qui error? Labore, quidem!</p>
+            </div>
+            <div class="cards col-md-4" id="f3">
+                <img src="images/cameraicon.png" >
+                <H2 class="headings">Shine like a star</H2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,consectetur mollitia explicabo incidunt reprehenderit sed qui error? Labore, quidem!</p>
+            </div>
+        </div>
+        <div class="c container3 row" id="d1">
+            <div class="imgbox col-md-6 my-4 my-md-0">
+                <img src="images/photo-1460647927807-8e664765c97c-1000x667.jpeg" alt="">
+            </div>
+            <div class="contents col-md-6 col-12 m-0">
+                <H2 class="headings">Demo1- Building model</H2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,consectetur mollitia explicabo incidunt reprehenderit sed qui error? Labore, quidem!</p>
+                <button class="btn btn-dark btn-lg commonBtn">Read more</button>
+            </div>
+        </div>
+        <div class="c container4 row" id="d2">
+            <div class="contents col-md-6 col-12">
+                <H2 class="headings">Demo2- Desk model</H2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,consectetur mollitia explicabo incidunt reprehenderit sed qui error? Labore, quidem!</p>
+                <button class="btn btn-dark btn-lg commonBtn">Read more</button>
+            </div>
+            <div class="imgbox col-md-6 my-4 my-md-0">
+                <img src="images/studio-1600x769.jpg" alt="">
+                <div class="sidebar">
+                    <div class="sidebar-box">
+                        <i class="fa-solid fa-desktop"></i>
+                        <p>DEMOS</p>
+                    </div>
+                    <div class="sidebar-box">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>BUY NOW</p>
+                    </div>
+                    <div class="sidebar-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>SUPPORT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c container5" id="news">
+            <div id="c5-left">
+                <h1 class="headings">LATEST NEWS</h1>
+                <P>Lorem ipsum dolor adipisicing elit. Veritatis deserunt  tempora quis eos temporibus provident!</P>
+                <button class="btn btn-dark btn-lg commonBtn">OUR BLOG</button>
+            </div>
+            <div id="secondaryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-bs-target="#secondaryCarousel" data-bs-slide-to="0" class="bg-primary active"></li>
+                    <li data-bs-target="#secondaryCarousel" data-bs-slide-to="1" class="bg-primary"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active c5-section">
+                        <div class="newsCard" id="news-a">
+                            <div class="news-img-box"><img src="images/fashionapp.jpg" ></div>
+                            <div class="inner">
+                                <h5 class="headings">Happy news for fashion freaks</h5>
+                                <div class="bar my-3" style="border-bottom: 2.5px solid #77777740; width: 40px;"></div>
+                                <P>Lorem ipsum dolor adipisicing elit. Veritatis deserunt  tempora quis eos temporibus provident!</P>
+                            </div>
+                        </div>
+                        <div class="newsCard" id="news-b">
+                            <div class="news-img-box"><img src="images/poloshirt.jpg"></div>
+                            <div class="inner">
+                                <h5 class="headings">New POLO shirts are here</h5>
+                                <div class="bar my-3" style="border-bottom: 2.5px solid #77777740; width: 40px;"></div>
+                                <P>Lorem ipsum dolor adipisicing elit. Veritatis deserunt  tempora quis eos temporibus provident!</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item c5-section">
+                        <div class="newsCard" id="news-c">
+                            <div class="news-img-box"><img src="images/glob.jpg"></div>
+                            <div class="inner">
+                                <h5 class="headings">Global Fashion meetup</h5>
+                                <div class="bar my-3" style="border-bottom: 2.5px solid #77777740; width: 40px;"></div>
+                                <P>Lorem ipsum dolor adipisicing elit. Veritatis deserunt  tempora quis eos temporibus provident!</P>
+                            </div>
+                        </div>
+                        <div class="newsCard" id="news-d">
+                            <div class="news-img-box"><img src="images/cam.jpg"></div>
+                            <div class="inner">
+                                <h5 class="headings">Best cameras for fashion photography</h5>
+                                <div class="bar my-3" style="border-bottom: 2.5px solid #77777740; width: 40px;"></div>
+                                <P>Lorem ipsum dolor adipisicing elit. Veritatis deserunt  tempora quis eos temporibus provident!</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#secondaryCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <i class="fa-solid fa-circle-chevron-left" aria-hidden="true" ></i>
+                    <!-- <span class="carousel-control-prev-icon carousel-arrows p-4" aria-hidden="true"></span> -->
+                    <span class="sr-only">previous</span>
+                </a>
+                <a href="#secondaryCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                    <!-- <span class="carousel-control-next-icon carousel-arrows" aria-hidden="true"></span> -->
+                    <span class="sr-only">next</span>
+                </a>
+            </div>
+        </div>
+        <nav class="c container6 navbar-dark">
+            <div class="c6-sec leftside d-flex">
+                <h2>Biggest sale of the year is here</h2>
+                <p>Grab all your favorite products at a stunning price in the coming big zillion sale!</p>
+            </div>
+            <div class="c6-sec rightside  d-flex">
+                <button class="btn btn-lg btn-outline-light">Know more</button>
+            </div>
+        </nav>
+        <div class="c container7 d-flex">
+            <div class="sec column1 d-flex" id="latest">
+                <h1 class="secHeading">LATEST</h1>
+                <div class="bar my-3" style="border-bottom: 3px solid #77777740; width: 40px;"></div>
+                <div class="picCard d-flex">
+                    <img src="images/252678-0029_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Off-sleeve blue shirt</h1>
+                        <h5 class="headings">$69,00</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/258836-0426_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Off-sleeve blue shirt</h1>
+                        <h5 class="headings">$25,90</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/282004-0286_2-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Canvas shoes blue</h1>
+                        <h5 class="headings">$6,00</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/538228-0286_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">T-shirt no:6</h1>
+                        <h5 class="headings">$31,50</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="sec column2 d-flex" id="best">
+                <h1 class="secHeading">BEST SELLING</h1>
+                <div class="bar my-3" style="border-bottom: 3px solid #77777740; width: 40px;"></div>
+                <div class="picCard d-flex">
+                    <img src="images/258836-0426_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Off-sleeve blue shirt</h1>
+                        <h5 class="headings">$25,90</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/282004-0286_2-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Canvas shoes blue</h1>
+                        <h5 class="headings">$60,00</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/252678-0029_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Off-sleeve blue shirt</h1>
+                        <h5 class="headings">$3,60</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/538228-0286_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">T-shirt no:6</h1>
+                        <h5 class="headings">$301,00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="sec column3 d-flex" id="featured">
+                <h1 class="secHeading">FEATURED</h1>
+                <div class="bar my-3" style="border-bottom: 3px solid #77777740; width: 40px;"></div>
+                <div class="picCard d-flex">
+                    <img src="images/538228-0286_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">T-shirt no:6</h1>
+                        <h5 class="headings">$78,00</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/258836-0426_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Off-sleeve blue shirt</h1>
+                        <h5 class="headings">$6,00</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/252678-0029_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Off-sleeve blue shirt</h1>
+                        <h5 class="headings">$30,00</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/282004-0286_2-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Canvas shoes blue</h1>
+                        <h5>$12,60</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="sec column4 d-flex" id="top">
+                <h1 class="secHeading">TOP RATED PRODUCTS</h1>
+                <div class="bar my-3" style="border-bottom: 3px solid #77777740; width: 40px;"></div>
+                <div class="picCard d-flex">
+                    <img src="images/258836-0426_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Off-sleeve blue shirt</h1>
+                        <h5>$8,40</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/538228-0286_1-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">T-shirt no:6</h1>
+                        <h5 class="headings">$6,00</h5>
+                    </div>
+                </div>
+                <div class="picCard d-flex">
+                    <img src="images/282004-0286_2-100x100.jpeg" >
+                    <div class="inner">
+                        <h1 class="headings">Canvas shoes blue</h1>
+                        <h5>$12,90</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c container8 d-flex px-3 py-4">
+            <div class="sec column1 d-flex" id="about">
+                <h1>ABOUT US</h1>
+                <div class="bar my-3" style="border-bottom: 5px solid #a0a0a0; width: 40px;"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cum.</p>
+                <div class="social-links">
+                    <a href="#about" class="social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#about" class="social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#about" class="social"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#about" class="social"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#about" class="social"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="sec column2 d-flex" id="footernews">
+                <h1>LATEST NEWS</h1>
+                <div class="bar my-3" style="border-bottom: 5px solid #a0a0a0; width: 40px;"></div>
+                <div class="c8-news">
+                    <a href="#news-a" class="news-link">
+                        <span class="news-date">19 Nov</span>
+                        <span class="news-heading">Explore FlatSome</span>
+                    </a>
+                </div>
+                <div class="c8-news">
+                    <a href="#news-b" class="news-link">
+                        <div class="news-date">13 Oct</div>
+                        <div class="news-heading">See newest trends</div>
+                    </a>
+                </div>
+                <div class="c8-news">
+                    <a href="#news-c" class="news-link">
+                        <div class="news-date">13 Oct</div>
+                        <div class="news-heading">Why fashion is important?</div>
+                    </a>
+                </div>
+                <div class="c8-news">
+                    <a href="#news-d" class="news-link">
+                        <div class="news-date">01 Jan</div>
+                        <div class="news-heading">The anual event video post</div>
+                    </a>
+                </div>
+            </div>
+            <div class="sec column3 d-flex" id="tags">
+                <h1>TAGS</h1>
+                <div class="bar my-3" style="border-bottom: 5px solid #a0a0a0; width: 40px;"></div>
+                <div id="tagDiv">
+                    <a href="#tags" class="c8-tags" role="button">bag</a>
+                    <a href="#tags" class="c8-tags" role="button">classic</a>
+                    <a href="#tags" class="c8-tags" role="button">Converse</a>
+                    <a href="#tags" class="c8-tags" role="button">Diesel</a>
+                    <a href="#tags" class="c8-tags" role="button">fit</a>
+                    <a href="#tags" class="c8-tags" role="button">green</a>
+                    <a href="#tags" class="c8-tags" role="button">Jack and Jones</a>
+                    <a href="#tags" class="c8-tags" role="button">Jack and Jones-2</a>
+                    <a href="#tags" class="c8-tags" role="button">jeans</a>
+                    <a href="#tags" class="c8-tags" role="button">Jumper</a>
+                    <a href="#tags" class="c8-tags" role="button">leather</a>
+                    <a href="#tags" class="c8-tags" role="button">Lee</a>
+                    <a href="#tags" class="c8-tags" role="button">levis</a>
+                    <a href="#tags" class="c8-tags" role="button">man</a>
+                    <a href="#tags" class="c8-tags" role="button">nypd</a>
+                    <a href="#tags" class="c8-tags" role="button">party</a>
+                    <a href="#tags" class="c8-tags" role="button">pink</a>
+                    <a href="#tags" class="c8-tags" role="button">River Island</a>
+                    <a href="#tags" class="c8-tags" role="button">Rock chick</a>
+                    <a href="#tags" class="c8-tags" role="button">Run</a>
+                    <a href="#tags" class="c8-tags" role="button">Shoe</a>
+                </div>
+            </div>
+            <div class="sec column4 d-flex" id="signup">
+                <h1>SIGNUP FOR NEWSLETTER</h1>
+                <div class="bar my-3" style="border-bottom: 5px solid #a0a0a0; width: 40px;"></div>
+                <p>Signup to get news abut Flatsome and WooCommerce. We don't spam.</p>
+                <input type="email" placeholder="Your Email(required)">
+                <button class="btn btn-dark commonBtn" id="suBtn">SIGN UP</button>
+            </div>
+        </div>
+        <nav class="c container9 navbar navbar-dark d-flex" id="last-sec">
+            <div class="c9-sec c9-left">
+                <div class="c9-left-top">
+                    <a href="" class="c9-redirect">About</a>
+                    <a href="" class="c9-redirect">our stories</a>
+                    <a href="" class="c9-redirect">blog</a>
+                    <a href="" class="c9-redirect">contact</a>
+                    <a href="" class="c9-redirect">faq</a>
+                </div>
+                <p>Copyright <i class="fa-regular fa-copyright"></i> 2022 <b>Flatsome Theme</b></p>
+            </div>
+            <div class="c9-sec c9-partners">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-stripe"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-solid fa-sack-dollar"></i>
+                 <!-- <i class="fa-brands fa-cc-"></i> -->
+            </div>
+        </nav>
+    </div>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
